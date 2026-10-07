@@ -1,0 +1,20 @@
+base Product {
+    price = 100
+    active = true
+}
+
+flow subtotal {
+    total = item.price * quantity
+}
+
+flow discount {
+    total = total * 0.90
+}
+
+system Shop {
+    use flow subtotal
+    use flow discount
+}
+
+item = Product({"price": 250})
+run system Shop
