@@ -1,0 +1,14 @@
+name = "Leather"
+price = 150.5
+quantity = 2
+items = [10, 20, 30]
+
+user = {
+    vip: true,
+    name: "VIP"
+}
+
+active = true
+total = price * quantity
+
+rule discount when user.vip and active and total > 250 -> price *= 0.9; quantity += 1
