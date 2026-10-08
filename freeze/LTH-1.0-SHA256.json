@@ -1,0 +1,41 @@
+{
+  "release": "LTH 1.0",
+  "files": [
+    {
+      "file": "src/lth10/__init__.py",
+      "sha256": "58492193853d28c08e9351191c9260a255e8d14e9c43e6254154329660f15b33"
+    },
+    {
+      "file": "src/lth10/model.py",
+      "sha256": "144eb3655d8c7512396fa8a64c368887599e385a877739f2ba53c409a6bdd74a"
+    },
+    {
+      "file": "src/lth10/contract.py",
+      "sha256": "1e49a02c29c72a3a964c009180bf2879df361e360c93da5a220cad10ad1ac26d"
+    },
+    {
+      "file": "src/lth10/discovery.py",
+      "sha256": "2a451665197aee5a3e5a04e43ede9c6f1718c39ae5d9bd75abfadcf1e40a2a12"
+    },
+    {
+      "file": "src/lth10/pipeline.py",
+      "sha256": "52586622527ea9ea79e949b31adf348edcc7fce3e36fbbbd86b1a81bd09686cf"
+    },
+    {
+      "file": "src/lth10/selfhost/core.lth",
+      "sha256": "6af4e778cfe41bf981fadafe33075ee50718786b4c53dc54b9d3a670bc07e41c"
+    },
+    {
+      "file": "tests/lth10/test_release_mega.py",
+      "sha256": "0f45e477e3a1c5136f535681e21f7afd415cb1590cdf25c74d0d12eef3b967a1"
+    },
+    {
+      "file": "tools/lth10_mega_build.py",
+      "sha256": "13fdd1ac53bdb40d83e288c0739fce8cd395628a64d16c32abdd05adf78d2da7"
+    },
+    {
+      "file": "docs/LTH-1.0-SELF-HOSTING.md",
+      "sha256": "38293072ef65e602d8d3139a07c804a51f67d20cfc38236376995872034c4315"
+    }
+  ]
+}

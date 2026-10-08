@@ -77,6 +77,41 @@ class Lexer:
                     tokens.append(Token("ASSIGN", "=", line, column))
                 continue
 
+            if char == "+":
+                self._advance()
+                tokens.append(Token("PLUS", "+", line, column))
+                continue
+
+            if char == "/":
+                self._advance()
+                tokens.append(Token("SLASH", "/", line, column))
+                continue
+
+            if char == "%":
+                self._advance()
+                tokens.append(Token("PERCENT", "%", line, column))
+                continue
+
+            if char == "(":
+                self._advance()
+                tokens.append(Token("LPAREN", "(", line, column))
+                continue
+
+            if char == ")":
+                self._advance()
+                tokens.append(Token("RPAREN", ")", line, column))
+                continue
+
+            if char == ",":
+                self._advance()
+                tokens.append(Token("COMMA", ",", line, column))
+                continue
+
+            if char == ":":
+                self._advance()
+                tokens.append(Token("COLON", ":", line, column))
+                continue
+
             if char == "*":
                 self._advance()
                 if self._current() == "=":

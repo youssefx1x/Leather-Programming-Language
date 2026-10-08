@@ -1,0 +1,23 @@
+{
+  "workload": {
+    "pairs": 100000,
+    "repetition_factor": 25000,
+    "semantic_result": 900000.0
+  },
+  "baseline": {
+    "min_ns": 13308177,
+    "median_ns": 13357708,
+    "mean_ns": 13680863
+  },
+  "accelerated": {
+    "min_ns": 441885729,
+    "median_ns": 597463906,
+    "mean_ns": 544752061
+  },
+  "speedup_x": 0.022357347223582742,
+  "acceleration": {
+    "fast_path_hits": 0,
+    "cache_hits": 99998,
+    "cache_misses": 2
+  }
+}

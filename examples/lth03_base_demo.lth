@@ -1,0 +1,12 @@
+base Product {
+    price = 100
+    active = true
+}
+
+base VIPProduct extends Product {
+    discount = 0.20
+}
+
+item = VIPProduct({"price": 250})
+final_price = item.price
+discount = item.discount

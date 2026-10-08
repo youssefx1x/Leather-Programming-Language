@@ -1,0 +1,35 @@
+# Leather 1.0 self-hosted core
+
+value language = "Leather"
+value version = "1.0"
+
+rule identity(value):
+    return value
+
+rule add(left, right):
+    return left + right
+
+rule multiply(left, right):
+    return left * right
+
+base Value:
+    rule get(value):
+        return value
+
+base Arithmetic:
+    rule sum(left, right):
+        return add(left, right)
+
+    rule product(left, right):
+        return multiply(left, right)
+
+flow self_test:
+    value result = multiply(add(2, 3), 4)
+    return result == 20
+
+system LeatherCore:
+    value name = language
+    value release = version
+
+    rule verify:
+        return self_test

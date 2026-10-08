@@ -1,0 +1,5 @@
+implementation	cases	passed	status	wall_ms
+Python	18	18	PASS	164.989
+C++	18	18	PASS	16.491
+Rust	18	18	PASS	12.735
+Cross-Match	18	18	PASS	-

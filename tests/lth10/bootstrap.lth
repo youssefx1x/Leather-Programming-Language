@@ -1,0 +1,10 @@
+value x = 2
+value y = 3
+
+rule add(a, b):
+    return a + b
+
+value result = add(x, y)
+
+rule verify():
+    return result == 5

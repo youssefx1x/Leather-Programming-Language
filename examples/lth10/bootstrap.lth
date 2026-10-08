@@ -1,0 +1,27 @@
+# Leather 1.0 — Self-Hosting Bootstrap
+
+value version = "1.0"
+
+rule add(a, b):
+    return a + b
+
+rule square(x):
+    return x * x
+
+base Engine:
+    value name = "Leather"
+    value release = version
+
+    rule compute(x):
+        return square(x)
+
+flow bootstrap:
+    value result = Engine.compute(12)
+    return result
+
+system Leather10:
+    value language = "Leather"
+    value version = version
+
+    rule run():
+        return bootstrap()
